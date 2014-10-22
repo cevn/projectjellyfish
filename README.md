@@ -30,7 +30,7 @@ Jellyfish is built using three virtual machines for the three primary components
 
 | Component          |Cloud Portal                                      |
 | --------           |:------------                                    |
-| Operating System   | RHEL 6.5 ot CentOS 6.5                           |
+| Operating System   | RHEL 6.5 or CentOS 6.5                           |
 | Memory             | 8 BG                                             |    
 | CPU                | 2                                                |
 | Disk               | 100 GB                                           |
@@ -135,8 +135,8 @@ Create Application and Add
 
 4. Update CRON Job Run Frequency
  - On the administrative toolbar on the top of the page, navigate to Configuration>System>Cron Settings>Settings
- - On the Settings page, under "Single Job Settings," locate the job called "bah_order_com_cron," and adjust to your desired schedule
- - Click Save.  If the changes are successful, a confirmation message will appear at the top of the screen. If you do not see this message, refresh the page, check "bah_order_com_cron," and try again.
+ - On the Settings page, under "Single Job Settings," locate the job called "bah_order_com_cron", and adjust to your desired schedule
+ - Click Save.  If the changes are successful, a confirmation message will appear at the top of the screen. If you do not see this message, refresh the page, check "bah_order_com_cron", and try again.
 
 5. LDAP Configuration
  - Navigate to Configuration>People>LDAP Configuration
@@ -213,13 +213,13 @@ service servicemix-service restart
     - Enter "update_servicemix_and_chef" for the Name and the Display Name
     - Go to the Fields section
       - Find "execute" under the Name column
-      - Enter update_servicemix_and_chef for the Value
+      - Enter "update_servicemix_and_chef" for the Value
       - Click Add
  - Navigate to ManageIQ>Service>Provisioning>StateMachines>Methods
  - Select the Methods tab
     - Click on Configuration -> Add a New Method
-    - Enter update_servicemix_and_chef for the Name
-    - Enter update_servicemix_and_chef for the Display Name
+    - Enter "update_servicemix_and_chef" for the Name
+    - Enter "update_servicemix_and_chef" for the Display Name
     - For the Location, select inline
     - Under Data, paste the code from [update_servicemix_and_chef code link]
     - Click Add
